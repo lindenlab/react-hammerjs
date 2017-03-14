@@ -41,6 +41,11 @@ var handlerToEvent = {
 	onRotateMove: 'rotatemove',
 	onRotateStart: 'rotatestart',
 	onSwipe: 'swipe',
+	onSwipeRight: 'swiperight',
+	onSwipeLeft: 'swipeleft',
+ 	onSwipeUp: 'swipeup',
+ 	onSwipeDown: 'swipedown',
+	onTap: 'tap',
 	onTap: 'tap',
 };
 
