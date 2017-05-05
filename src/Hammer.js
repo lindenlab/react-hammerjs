@@ -96,14 +96,10 @@ function updateHammer (hammer, props) {
 }
 
 class HammerComponent extends React.Component {
-
+	
 	constructor(props) {
 		super(props)
 		this.displayName = "Hammer"
-	}
-
-	static propTypes = {
-		className: PropTypes.string,
 	}
 
 	componentDidMount() {
@@ -138,6 +134,10 @@ class HammerComponent extends React.Component {
 		// This makes it flexible to use whatever element is wanted (div, ul, etc)
 		return React.cloneElement(React.Children.only(this.props.children), props);
 	}
+};
+
+HammerComponent.propTypes = {
+	className: PropTypes.string,
 };
 
 module.exports = HammerComponent;
