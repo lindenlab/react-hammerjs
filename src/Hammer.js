@@ -97,11 +97,6 @@ function updateHammer (hammer, props) {
 
 class HammerComponent extends React.Component {
 	
-	constructor(props) {
-		super(props)
-		this.displayName = "Hammer"
-	}
-
 	componentDidMount() {
 		this.hammer = new Hammer(ReactDOM.findDOMNode(this));
 		updateHammer(this.hammer, this.props);
@@ -135,7 +130,7 @@ class HammerComponent extends React.Component {
 		return React.cloneElement(React.Children.only(this.props.children), props);
 	}
 };
-
+HammerComponent.displayName = 'Hammer'
 HammerComponent.propTypes = {
 	className: PropTypes.string,
 };
